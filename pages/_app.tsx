@@ -11,12 +11,22 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 
+const theme = {
+  colors: {
+    base: "#000",
+    orange: "#D4583B"
+  },
+  titleFont: "NeueMachina",
+}
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider>
+    <>
       <GlobalStyle />
-      <Component {...pageProps} />
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
   )
 }
 
