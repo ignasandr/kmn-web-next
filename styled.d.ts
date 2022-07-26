@@ -8,6 +8,10 @@ declare module 'styled-components' {
       base: string;
       orange: string;
     };
-    titleFont: string
+
+    fonts: {
+      base: string;
+      title: string;
+    }
   }
 }

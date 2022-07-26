@@ -7,7 +7,6 @@ const GlobalStyle = createGlobalStyle`
     body {
       padding: 0;
       margin: 0;
-      font-family: "Nexa", Helvetica, Arial, Lucida, sans-serif;
     }
 `
 
@@ -16,7 +15,10 @@ const theme = {
     base: "#000",
     orange: "#D4583B"
   },
-  titleFont: "NeueMachina",
+  fonts: {
+    base: "Nexa",
+    title: "NeueMachina"
+  }
 }
 
 function MyApp({ Component, pageProps }: AppProps) {

@@ -11,10 +11,16 @@ const StyledHeaderItem = styled.span`
 
     a {
         color: ${props => props.theme.colors.base};
+        font-family: ${props => props.theme.fonts.base};
         text-decoration: none;
-        font-weight: bold;
+        font-weight: 600;
         font-size: 14px;
     }
+
+    &:hover {
+    opacity: 0.7;
+    };
+    transition:opacity 0.4s linear;
 `
 
 export default function HeaderItem({ children }: Props) {

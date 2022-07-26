@@ -19,6 +19,7 @@ const StyledHeaderContents = styled.div`
     padding-left: 20vw;
     background-color: white;
     align-items: flex-end;
+
 `
 
 export default function Header() {

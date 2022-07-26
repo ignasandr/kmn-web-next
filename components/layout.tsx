@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { ReactNode } from "react";
 import styled from 'styled-components';
-import Header from "./header/header";
+import Header from "./header";
 
 type Props = {
     children?: ReactNode,
